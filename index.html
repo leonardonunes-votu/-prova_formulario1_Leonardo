@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Formulário</title>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+    <h1 class="titulo">Exemplos de Formulário em HTML</h1>
+    <hr>
+
+    <h2 class="titulo">Exemplo 1</h2>
+    <input class="ex1" type="text" name="nome" placeholder="Nome" required>
+    <input class="ex1"  type="email" name="email" placeholder="Email" required>
+    <input class="ex1"  type="tel" name="celular" placeholder="Celular" required>
+    <input class="ex1"  type="password" name="senha" placeholder="Senha" required>
+    <button id="sub1" type="submit" class="cad">Cadastrar</button>
+    <hr>
+
+    <h2 class="titulo">Exemplo 2</h2>
+    <textarea name="ex2" id="ex2"></textarea>
+    <hr>
+
+    <h2 class="titulo">Exemplo 3</h2>
+    <fieldset class="form">
+        <legend>Formulário</legend>
+        <form>
+            Nome: <input type="text" name="nome"><br><br>
+            Sexo: <input type="radio" name="Sexo" value="M"> Masculino
+            <input type="radio" name="Sexo" value="F"> Feminino<br><br>
+            País:   <select name="pais">
+                        <option value="">Selecione um opção</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Japão">Japão</option>
+                        <option value="França">França</option>
+                        <option value="México">México</option>
+                    </select><br><br>
+            Mensagem:<br>
+            <textarea name="mensagem" id="ex3"></textarea>
+            <br><br>
+
+            <input type="checkbox" name="aceito" value="sim"> Assinar Newsletter?<br><br>
+            <input id="sub2" type="submit" value="Enviar">
+        </form>
+    </fieldset>
+    <hr>
+
+    <h2 class="titulo">Exemplo 4</h2>
+    <form action="https://google.com/search" method="get">
+    <input class="ex4" type="search" name="q">
+    <input class="sub3" type="submit" name="pesq" value="Clique para pesquisar">
+    </form>
+    <hr>
+
+    <h2 class="titulo">Exemplo 5</h2>
+    <fieldset class="ex5">
+        <legend>Selecione a cor que mais agrada?</legend>
+        <form>
+            <input type="checkbox" name="cor" value="cor"> azul
+            <input type="checkbox" name="cor" value="cor"> vermelho
+            <input type="checkbox" name="cor" value="cor"> verde
+            <input type="checkbox" name="cor" value="cor"> amarelo
+        </form>
+    </fieldset>
+
+</body>
+</html>
